@@ -1,0 +1,8 @@
+{
+    "env": {
+        "DB_USER": "waseemanim_123",
+        "DB_PASSWORD": "waseemanim123",
+        "DB_NAME": "ExpenseDB",
+        "JWT_SECRET": "ad3t4jkje94532ljkwlwer3o54"
+    }
+}
