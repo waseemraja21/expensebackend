@@ -16,7 +16,9 @@ app.use(cookieParser());
 
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({ credentials: true, origin: "http://localhost:5173" }));
-
+app.get("/", (req, res) => {
+    res.send("Backend is running! 🚀");
+});
 app.use("/api/expenses", expenseRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/budget", budgetRoutes);
