@@ -15,7 +15,7 @@ app.use(express.json({ extended: true }));
 app.use(cookieParser());
 
 app.use(express.urlencoded({ extended: true }));
-app.use(cors({ credentials: true, origin: "https://localhost:3000" }));
+app.use(cors({ credentials: true, origin: "https://expenseclient.vercel.app/" }));
 app.get("/", (req, res) => {
     res.send("Backend is running! 🚀");
 });
